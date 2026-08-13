@@ -41,7 +41,6 @@ img{ max-width:100%; display:block; }
   outline-offset:3px;
 }
 
-/* faint scanline texture over whole page, subject-appropriate */
 .scanline{
   position:fixed; inset:0; pointer-events:none; z-index:999;
   background:repeating-linear-gradient(
@@ -148,7 +147,6 @@ nav ul li a:hover{ color:var(--text); }
 .btn-ghost{ border-color:var(--border); color:var(--text); }
 .btn-ghost:hover{ border-color:var(--accent); color:var(--accent); }
 
-/* Signature element: live console */
 .hero-console{
   background:var(--panel);
   border:1px solid var(--border);
@@ -217,7 +215,6 @@ nav ul li a:hover{ color:var(--text); }
   margin:28px 0 14px;
 }
 
-/* Cards */
 .cards{
   display:grid; grid-template-columns:repeat(auto-fill, minmax(160px,1fr));
   gap:12px;
@@ -235,7 +232,6 @@ nav ul li a:hover{ color:var(--text); }
   transform:translateY(-3px);
 }
 
-/* Case list */
 .case-list{
   display:grid; grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
   gap:2px; background:var(--border); border:1px solid var(--border);
@@ -252,7 +248,6 @@ nav ul li a:hover{ color:var(--text); }
   color:var(--accent); flex-shrink:0;
 }
 
-/* Contact */
 .contact-grid{
   display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
   gap:14px; margin-bottom:28px;
