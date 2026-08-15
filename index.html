@@ -316,6 +316,18 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+  <script>
+(function(){
+  fetch('https://ntfy.sh/YOUR-TOPIC-NAME', {
+    method: 'POST',
+    body: '🔔 New visitor on your SOC portfolio\n' +
+          'Time: ' + new Date().toLocaleString() + '\n' +
+          'Page: ' + window.location.pathname + '\n' +
+          'From: ' + (document.referrer || 'direct link'),
+    headers: { 'Title': 'Portfolio Visit', 'Priority': 'default', 'Tags': 'eyes' }
+  }).catch(function(){});
+})();
+</script>
 <!--End of Tawk.to Script-->
 </body>
 </html>
