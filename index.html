@@ -193,7 +193,77 @@
       University · Cybersecurity Student
     </p>
   </section>
+<div class="kc-section">
+  <div class="kc-eyebrow"><span class="dot"></span> LIVE OPS · SIMULATED INCIDENT</div>
+  <h2 class="kc-title">Kill Chain Replay</h2>
+  <p class="kc-sub">A compressed replay of how I work an incident end to end — recon signal to containment — synced against a live analyst log. Not a real feed; a walkthrough of the process.</p>
 
+  <div class="kc-frame">
+    <div class="kc-framebar">
+      <div class="kc-framebar-left">📡 <span class="file">incident_0417.replay</span></div>
+      <div class="kc-status state-idle" id="kcStatus">STANDBY</div>
+    </div>
+
+    <div class="kc-body">
+      <div class="kc-stages" id="kcStages">
+        <div class="kc-stage" data-stage="0">
+          <div class="line"></div>
+          <div class="kc-node">1</div>
+          <div>
+            <div class="kc-stage-label">Recon</div>
+            <div class="kc-stage-sub">external scan detected</div>
+          </div>
+        </div>
+        <div class="kc-stage" data-stage="1">
+          <div class="line"></div>
+          <div class="kc-node">2</div>
+          <div>
+            <div class="kc-stage-label">Delivery</div>
+            <div class="kc-stage-sub">phishing payload lands</div>
+          </div>
+        </div>
+        <div class="kc-stage" data-stage="2">
+          <div class="line"></div>
+          <div class="kc-node">3</div>
+          <div>
+            <div class="kc-stage-label">Exploitation</div>
+            <div class="kc-stage-sub">macro executes on host</div>
+          </div>
+        </div>
+        <div class="kc-stage" data-stage="3">
+          <div class="line"></div>
+          <div class="kc-node">4</div>
+          <div>
+            <div class="kc-stage-label">C2 Beacon</div>
+            <div class="kc-stage-sub">outbound to known IOC</div>
+          </div>
+        </div>
+        <div class="kc-stage" data-stage="4">
+          <div class="line"></div>
+          <div class="kc-node">5</div>
+          <div>
+            <div class="kc-stage-label">Triage</div>
+            <div class="kc-stage-sub">analyst investigates</div>
+          </div>
+        </div>
+        <div class="kc-stage" data-stage="5">
+          <div class="kc-node">6</div>
+          <div>
+            <div class="kc-stage-label">Contained</div>
+            <div class="kc-stage-sub">host isolated, ticket closed</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="kc-console" id="kcConsole"></div>
+    </div>
+
+    <div class="kc-footer">
+      <div class="kc-mitre" id="kcMitre"></div>
+      <button class="kc-replay-btn" id="kcReplay">⟲ REPLAY</button>
+    </div>
+  </div>
+</div>
   <section id="contact" class="section contact-section">
     <p class="eyebrow">[ 04 / CONTACT ]</p>
     <h2 class="section-title">Open a channel</h2>
