@@ -186,3 +186,38 @@ if (consoleBody) {
   if (kcFrame) io.observe(kcFrame);
 })();
 }
+(function(){
+  const lines = [
+    "Everything is ready. Just waiting for you to trust me.",
+    "Threat hunting, log analysis, incident response — all set.",
+    "One message away from securing your systems."
+  ];
+  const el = document.getElementById('twText');
+  if (!el) return;
+
+  let lineIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function tick(){
+    const current = lines[lineIndex];
+    if (!deleting){
+      el.textContent = current.slice(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === current.length){
+        deleting = true;
+        setTimeout(tick, 1800);
+        return;
+      }
+    } else {
+      el.textContent = current.slice(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0){
+        deleting = false;
+        lineIndex = (lineIndex + 1) % lines.length;
+      }
+    }
+    setTimeout(tick, deleting ? 30 : 55);
+  }
+  tick();
+})();
