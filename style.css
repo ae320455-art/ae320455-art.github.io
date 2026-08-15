@@ -676,5 +676,55 @@ footer{
 .trust-badge .dot{
   width:5px;height:5px;border-radius:50%;
   background:#3DDC97;
+   .typewriter-frame{
+  border:1px solid #212938;
+  background:linear-gradient(180deg, #10141D 0%, #0D111A 100%);
+  border-radius:6px;
+  overflow:hidden;
+  max-width:720px;
+  margin:0 auto;
+}
+.typewriter-bar{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 16px;
+  border-bottom:1px solid #212938;
+  background:#151B26;
+  font-size:11px;
+  color:#5C6779;
+  letter-spacing:.06em;
+}
+.tw-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:#3DDC97;
+  box-shadow:0 0 8px #3DDC97;
+  animation:tw-pulse 2s ease-in-out infinite;
+}
+@keyframes tw-pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+.typewriter-body{
+  padding:34px 26px;
+  font-size:17px;
+  line-height:1.6;
+  color:#D7DEE8;
+  min-height:80px;
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.tw-prompt{
+  color:#3DDC97;
+  margin-right:10px;
+  font-weight:700;
+}
+.tw-cursor{
+  display:inline-block;
+  width:8px;height:19px;
+  background:#4FD1FF;
+  margin-left:3px;
+  animation:tw-blink 1s step-end infinite;
+  vertical-align:middle;
+}
+@keyframes tw-blink{50%{opacity:0;}}
 }
 }
